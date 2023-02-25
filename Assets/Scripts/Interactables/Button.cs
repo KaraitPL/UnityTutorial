@@ -19,12 +19,12 @@ public class Button : Interactable
     // Update is called once per frame
     void Update()
     {
-        animator.SetBool("isPressed", false);
+
     }
 
     protected override void Interact()
     {
-        animator.SetBool("isPressed", true);
+        animator.SetTrigger("buttonPress");
         keypadCode.AddToCode(buttonNumber);
     }
 

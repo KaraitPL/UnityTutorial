@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692be7dad8b270a4e97e14c0c7601309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useEvent: 0
   promptMessage: 
   buttonNumber: 0
 --- !u!95 &6350574535101893941

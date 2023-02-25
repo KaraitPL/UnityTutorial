@@ -16,13 +16,13 @@ public class Keypad : Interactable
     // Update is called once per frame
     void Update()
     {
-        animator.SetBool("isPressed", false);
+
     }
     //this function is where we will design our interaction using code.
     protected override void Interact()
     {
-        animator.SetBool("isPressed", true);
         doorOpen = !doorOpen;
         door.GetComponent<Animator>().SetBool("IsOpen", doorOpen);
+        animator.SetTrigger("buttonPress");
     }
 }
